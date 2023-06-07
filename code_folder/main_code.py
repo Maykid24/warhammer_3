@@ -3,4 +3,8 @@
 
 import backend_information.randomizer.choose_wisely as c_wisely
 
-c_wisely.random_pick()
+choice = c_wisely.random_pick()
+
+file1 = open("C:/Users/patjs/Desktop/Warhammer_Race_Pick.txt", "w")
+file1.writelines(choice)
+file1.close()
